@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.main-image {
+    background: url("forest.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh; /*Viewport Height-es la parte visible en la página de un navegador. 100vh significa que el fondo se extiende en toda la pantalla*/
+    display: flex; /*nos ayuda a mantener el formato incluso cuando cambiamos el tamaño de la ventana*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;/*rem-root EM, EM es una unidad de medida que se basa en pixeles (16pixeles =1rem)*/
+}
+
+.main-image h1 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+.main-image h1 .strike {
+    text-decoration: line-through;
+}
+
+.main-image p {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.main-image .btn {
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer; /*para cambiar el cursor a manita cuando toque el boton*/
+}
+
+.main-image a {
+    color: #fff;
+    text-decoration: none;
+}
